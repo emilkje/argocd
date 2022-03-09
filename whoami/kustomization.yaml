@@ -1,5 +1,6 @@
 resources:
 - whoami-deployment.yaml
 - whoami-svc.yaml
+- whoami-ingress.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
