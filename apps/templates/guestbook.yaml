@@ -11,7 +11,7 @@ spec:
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: '/'
+    path: k8s
     repoURL: https://github.com/emilkje/sample-frontend
     targetRevision: HEAD
   syncPolicy:
