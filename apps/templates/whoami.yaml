@@ -12,8 +12,8 @@ spec:
   project: default
   source:
     path: whoami
-    repoURL: {{ .Values.spec.source.repoURL }}
-    targetRevision: {{ .Values.spec.source.targetRevision }}
+    repoURL: https://github.com/emilkje/argocd
+    targetRevision: HEAD
   syncPolicy:
     automated:
       prune: false # Specifies if resources should be pruned during auto-syncing ( false by default ).
