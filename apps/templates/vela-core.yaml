@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: vela-core
+  namespace: argocd
+spec:
+  project: default
+  source:
+    chart: vela-core
+    repoURL: https://charts.kubevela.net/core
+    targetRevision: 1.2.5
+    helm:
+      releaseName: vela-core
+  destination:
+    namespace: vela-system
+    server: {{ .Values.spec.destination.server }}
