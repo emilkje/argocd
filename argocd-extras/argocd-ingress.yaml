@@ -6,6 +6,8 @@ metadata:
     app.kubernetes.io/name: argocd-server-ingress
     app.kubernetes.io/component: server-ingress
     app.kubernetes.io/part-of: argocd
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
 spec:
   rules:
   - host: argocd.apps.v95.io
